@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Esa Khan Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .about-mf .box-shadow-full { padding-top: 4rem; padding-bottom: 4rem; }
+      .about-mf .about-img { margin-bottom: 2rem; }
+      .about-mf .about-img img { margin-left: 10px; }
+      .skill-mf .progress { margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem; }
+      .skill-mf .progress .progress-bar { height: .7rem; background-color: #ffbd39; }
+      #typing-animation {
+        position: relative; font-size: 30px; font-weight: bold;
+        color: rgb(255,255,255); overflow: hidden; white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+      @keyframes typing { from { width: 0; } to { width: 100%; } }
+      .zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
+      .zoom-effect:hover { transform: scale(1.1); }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Esa Khan</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png); position:relative;">
+                <div class="overlay"></div>
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;">
+                  <img src="images/esa-khan.png" alt="Esa Khan" style="width:260px;height:260px;object-fit:cover;object-position:top;border-radius:50%;border:5px solid #ffbd39;box-shadow:0 0 25px rgba(255,189,57,0.5);">
+                </div>
+              </div>
+              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Esa Khan</span></h1>
+                  <span id="typing-animation"></span>
+                  <script>
+                    const typingAnimationElement = document.getElementById('typing-animation');
+                    const typingTexts = ['Data Analyst    ','ML/AI Engineer  ','Python Developer'];
+                    function playTypingAnimation(text) {
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 200);
+                      }
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 200);
+                    }
+                    playTypingAnimation(typingTexts[0]);
+                  </script>
+                  <br><br>
+                  <h2>Data Analyst & ML/AI Engineer</h2>
+                  <p>
+                    <a href="https://github.com/esakhan786" target="_blank" class="btn btn-primary py-3 px-4">GitHub</a>
+                    <a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My Projects</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Esa Khan</span></p>
+                        <p><span class="title-s">Role: </span> <span>Data Analyst & ML/AI Engineer</span></p>
+                        <p><span class="title-s">Degree: </span> <span>BS Computer Science (7th Sem)</span></p>
+                        <p><span class="title-s">Address: </span> <span>Abbottabad, Pakistan</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>Python</span> <span class="pull-right">85%</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%;"></div></div>
+                    <span>Machine Learning</span> <span class="pull-right">80%</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%;"></div></div>
+                    <span>Data Analysis & EDA</span> <span class="pull-right">85%</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%;"></div></div>
+                    <span>Data Visualization</span> <span class="pull-right">80%</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%;"></div></div>
+                    <span>OOP & Data Structures</span> <span class="pull-right">75%</span>
+                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 75%;"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+                  <p>Computer Science student (7th semester) at COMSATS University Abbottabad with hands-on experience in Python programming, data science libraries, and supervised machine learning. HCIA-AI certified with a strong foundation in algorithms and mathematics.</p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Machine Learning</span></li>
+                    <li class="d-flex"><span>University:</span> <span>COMSATS University Abbottabad</span></li>
+                    <li class="d-flex"><span>Education:</span> <span>BS Computer Science (2023–2027)</span></li>
+                    <li class="d-flex"><span>Languages:</span> <span>Python, Java, C, C++, C#, Flutter</span></li>
+                    <li class="d-flex"><span>ML Stack:</span> <span>Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn</span></li>
+                    <li class="d-flex"><span>Tools:</span> <span>GitHub, Jupyter Notebook, VS Code</span></li>
+                    <li class="d-flex"><span>Certification:</span> <span>HCIA-AI V3.5 – Huawei Certified ICT Associate in AI</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="text">
+                  <p class="mb-4">
+                    <span class="number" data-number="15">0</span><span>+</span>
+                    <span>&nbsp; Projects completed</span>
+                  </p>
+                  <p><a href="https://www.linkedin.com/in/esakhan-1b4941385/" target="_blank" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>CS student at COMSATS University Abbottabad with expertise in Python, ML algorithms, and data analysis. Huawei HCIA-AI V3.5 certified.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2023–2027</span>
+              <h2>Bachelor of Computer Science</h2>
+              <span class="position">COMSATS University Abbottabad</span>
+              <p class="mt-4">Currently in 7th semester. Strong foundation in algorithms, data structures, and mathematical concepts. Focused coursework in Machine Learning, Artificial Intelligence, and Software Engineering.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2020–2022</span>
+              <h2>FSC – Computer Science</h2>
+              <span class="position">Govt Postgraduate College Lakki Marwat</span>
+              <p class="mt-4">Completed pre-engineering studies with focus on Computer Science fundamentals and mathematics.</p>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+          <h1 class="big-4">Certifications &amp; Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2024</span>
+              <h2>HCIA-AI V3.5</h2>
+              <span class="position">Huawei Certified ICT Associate – Artificial Intelligence</span>
+              <p class="mt-4">Comprehensive certification covering AI fundamentals, machine learning algorithms, deep learning concepts, and enterprise AI solutions.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2023–Present</span>
+              <h2>Python & Data Science Projects</h2>
+              <span class="position">Academic & Personal Development</span>
+              <p class="mt-4">Built 15+ projects including data analysis systems, voice assistants, GUI applications, ML models, and custom data structure implementations using Python and its ecosystem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="Esa_Khan_CV.pdf" download="Esa_Khan_CV.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Python projects in AI, Data Analysis, GUI development and more.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/esakhan786" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/esakhan786" target="_blank">Jarvis Voice Assistant (AI-Based)</a></h3>
+                <p>Voice-controlled AI assistant with speech recognition and text-to-speech. Opens websites, tells time/date, tells jokes, and plays YouTube content automatically.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/esakhan786" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/esakhan786" target="_blank">Pakistani Retail Sales Analysis</a></h3>
+                <p>Cleaned 11,000+ records, localized data to Pakistani context, and revealed that the Female segment contributed 70% of total revenue using Seaborn visualizations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/esakhan786" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/esakhan786" target="_blank">News App (API-Based GUI)</a></h3>
+                <p>Desktop news application built with Tkinter and News API that fetches live headlines with images and supports next/previous article navigation in real-time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/esakhan786" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/esakhan786" target="_blank">Netflix Recommendation System</a></h3>
+                <p>Logic-based recommendation engine that suggests movies and shows based on user preferences — built entirely without external ML libraries using pure Python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/esakhan786" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/esakhan786" target="_blank">Google Translate Clone</a></h3>
+                <p>Python-based translation application integrating the Google Translate API, supporting multi-language detection and real-time text translation via a clean GUI.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/esakhan786" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/esakhan786" target="_blank">Custom Data Types (Matrix, Vector, Fraction)</a></h3>
+                <p>Implemented Fraction, Matrix, and Vector classes from scratch in Python, demonstrating deep understanding of Python's object model and operator overloading.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+        <div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Programming Languages</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1">0</strong>
+                <span>Certification</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="7">0</strong>
+                <span>Semesters Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>More projects on <span>GitHub</span></h2>
+            <div class="heading">
+              <h4>I love to transform data into actionable insights &amp; build intelligent solutions</h4>
+              <br>
+              <p><a href="https://github.com/esakhan786" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>I'm currently looking for opportunities in Data Analysis and Machine Learning. Feel free to reach out!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Abbottabad, KP, Pakistan</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel:+923250070313">+92 325 0070313</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="mailto:esak62622@gmail.com">esak62622@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Download CV</h3>
+              <p><a href="Esa_Khan_CV.pdf" download="Esa_Khan_CV.pdf">Click to Download</a></p>
+            </div>
+          </div>
+
+          <div class="container">
+            <br><br>
+            <div class="row justify-content-center">
+              <div class="col-md-7 ftco-animate text-center">
+                <h2>Have a <span>Question? </span>
+                  <a href="mailto:esak62622@gmail.com" class="btn btn-primary py-3 px-5">Email Me</a>
+                </h2>
+              </div>
+            </div>
+            <br>
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li class="ftco-animate normal-txt">Find me on &nbsp;</li>
+              <li class="ftco-animate"><a href="https://github.com/esakhan786" target="_blank"><span class="icon-github"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.linkedin.com/in/esakhan-1b4941385/" target="_blank"><span class="icon-linkedin"></span></a></li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Esa Khan. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
